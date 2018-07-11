@@ -7,7 +7,7 @@ const API = 'https://api.github.com/users';
   constructor(props) {
     super(props)
     this.state = {
-      username: 'hesmaili',
+      username: 'ajay1231231',
       name:'',
       avatar:'',
       location:'',
@@ -47,7 +47,6 @@ const API = 'https://api.github.com/users';
            <SearchProfile fetchProfile={this.fetchProfile.bind(this)}/>
            <Profile data={this.state} />
          </section>
-          <span className="hesmaili">GitHub Card With ReactJs - Created By <a href="https://twitter.com/hesmaili95" target="_blank" title="Hamed Esmaili">Hamed Esmaili</a></span>
       </div>
     )
   }
