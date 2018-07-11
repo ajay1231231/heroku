@@ -1,8 +1,4 @@
-# react-mobx-firebase-authentication
-
-* Found in [Taming the State in React](https://roadtoreact.com/course-details?courseId=TAMING_THE_STATE)
-* [Live](https://react-firebase-authentication.wieruch.com/)
-* [Tutorial](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/)
+# react-login-with-firebase-authentication
 
 ## Features
 
@@ -22,8 +18,8 @@
 
 ## Installation
 
-* `git clone git@github.com:rwieruch/react-mobx-firebase-authentication.git`
-* `cd react-mobx-firebase-authentication`
+* `git clone git@github.com/ajay1231231/heroku.git`
+* `cd react-login-with-firebase-authentication`
 * `npm install`
 * `npm start`
 * visit http://localhost:3000/
