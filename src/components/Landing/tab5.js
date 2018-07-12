@@ -7,7 +7,7 @@ const API = 'https://api.github.com/users';
   constructor(props) {
     super(props)
     this.state = {
-      username: 'ajay1231231',
+      username: 'notwaldorf ',
       name:'',
       avatar:'',
       location:'',
