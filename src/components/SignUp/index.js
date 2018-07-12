@@ -3,13 +3,13 @@ import {
   Link,
   withRouter,
 } from 'react-router-dom';
-
+import { Row, Col } from 'reactstrap';
 import { auth, db } from '../../firebase';
 import * as routes from '../../constants/routes';
 
 const SignUpPage = ({ history }) =>
   <div>
-    <h1>SignUp</h1>
+    <h1 className="text-center" style={{ margin:'10px 0px' }}>SignUp</h1>
     <SignUpForm history={history} />
   </div>
 
@@ -80,41 +80,51 @@ class SignUpForm extends Component {
       email === '';
 
     return (
-      <form onSubmit={this.onSubmit} className="form-horizontal">
-      <div className="form-group">  
-		<input
-          value={username}
-          onChange={event => this.setState(updateByPropertyName('username', event.target.value))}
-          type="text" className="form-control"
-          placeholder="Full Name"
-        />
-	  </div>
-      <div className="form-group">	  
-        <input
-          value={email}
-          onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
-          type="text"
-          placeholder="Email Address" className="form-control"
-        />
-	  </div>
-      <div className="form-group">	  
-        <input
-          value={passwordOne}
-          onChange={event => this.setState(updateByPropertyName('passwordOne', event.target.value))}
-          type="password"
-          placeholder="Password" className="form-control"
-        />
-	  </div>
-      <div className="form-group">	   
-        <input
-          value={passwordTwo}
-          onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
-          type="password"
-          placeholder="Confirm Password" className="form-control"
-        />
-	  </div>	
-	  <div className="form-group">	
-        <button disabled={isInvalid} type="submit" className="btn btn-primary">
+      <form onSubmit={this.onSubmit} className="form-horizontal" style={{ width:'60%', margin:'0px auto' }} >
+      <Row>
+         <Col md="6">
+            <div className="form-group">  
+                <input
+                  value={username}
+                  onChange={event => this.setState(updateByPropertyName('username', event.target.value))}
+                  type="text" className="form-control"
+                  placeholder="Full Name"
+                />
+             </div>
+        </Col>
+        <Col md="6">
+            <div className="form-group">	  
+              <input
+                value={email}
+                onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
+                type="text"
+                placeholder="Email Address" className="form-control"
+              />
+          </div>
+        </Col>  
+        <Col md="6">  
+            <div className="form-group">	  
+              <input
+                value={passwordOne}
+                onChange={event => this.setState(updateByPropertyName('passwordOne', event.target.value))}
+                type="password"
+                placeholder="Password" className="form-control"
+              />
+          </div>
+        </Col>  
+        <Col md="6">  
+            <div className="form-group">	   
+              <input
+                value={passwordTwo}
+                onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
+                type="password"
+                placeholder="Confirm Password" className="form-control"
+              />
+          </div>
+        </Col>
+    </Row>	
+	  <div className="form-group text-center">	
+        <button disabled={isInvalid} type="submit" className="btn btn-primary ">
           Sign Up
         </button>
       </div>
