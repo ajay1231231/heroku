@@ -37,7 +37,6 @@ class SignUpForm extends Component {
     const {
       username,
       email,
-      PhoneNumber,
       passwordOne,
       
     } = this.state;
@@ -73,7 +72,6 @@ class SignUpForm extends Component {
       email,
       passwordOne,
       passwordTwo,
-      PhoneNumber,
       error,
     } = this.state;
 
@@ -123,16 +121,6 @@ class SignUpForm extends Component {
                 onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
                 type="password"
                 placeholder="Confirm Password" className="form-control"
-              />
-          </div>
-        </Col>
-        <Col md="6">  
-            <div className="form-group">	   
-              <input
-                value={PhoneNumber}
-                onChange={event => this.setState(updateByPropertyName('PhoneNumber', event.target.value))}
-                type="number"
-                placeholder="Phone Number" className="form-control"
               />
           </div>
         </Col>

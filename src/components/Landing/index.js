@@ -16,10 +16,6 @@ import '../../../node_modules/react-tabs/style/react-tabs.css';
 import './landing.css';
 import './style.css';
 
-{/*var Carousel = require('react-responsive-carousel').Carousel;*/}
-{/*import Gallery from 'react-photo-gallery';*/}
-
-
 const products = [{
   id: 1, name:'Dell', price:'$200'
 }, {
@@ -121,22 +117,6 @@ export default class LandingPage extends React.Component{
     return (
 
   <div>
-   {/*
-    <Carousel>
-                <div>
-                    <img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg"  />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg" />
-                    <p className="legend">Legend 3</p>
-                </div>
-     </Carousel>*/
-   }
      <Tab3 />
      <Jumbotron style={{marginTop:10 }}>
         <h1 className="display-3">Hello, world!</h1>
@@ -291,42 +271,10 @@ export default class LandingPage extends React.Component{
          <Tab4 />
          <Tab5 />
       </Row>  
-      {/*<Gallery photos={PHOTO_SET} /> */}
             
   </div>
       );
     }
   }
-{/*const PHOTO_SET = [
-  {
-    src: 'https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg',
-    width: 4,
-    height: 4
-  },
-  {
-    src: 'http://eskipaper.com/images/free-computer-backgrounds-2.jpg',
-    width: 4,
-    height: 4
-  },
-  {
-    src: 'http://sfwallpaper.com/images/best-nature-background-7.jpg',
-    width: 4,
-    height: 4
-  },
-  {
-    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIWkalYn9XqzHSCzp64A3RbY-AE5Pq7WfPwFSg62qVeH9iFHu1',
-    width: 4,
-    height: 4
-  },
-  {
-    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzTwATEPXKRRRNNiCI0eU2wPuG7QIfJuI7IieSFLvdPZzH2zOZ0A',
-    width: 4,
-    height: 4
-  },
-  {
-    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2_1pNvPH7Xb2VPjpQ53dIiTm3fDkOfX2GPNMVYk4sHf4iJJGh',
-    width: 4,
-    height: 4
-  }
-];*/}
+
 
