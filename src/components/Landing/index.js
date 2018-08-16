@@ -5,6 +5,7 @@ import {CollapsibleComponent, CollapsibleHead, CollapsibleContent} from 'react-c
 import Iframe from 'react-iframe';
 import BootstrapTable from 'react-bootstrap-table-next';
 import Gallery from 'react-grid-gallery';
+import {CircleArrow as ScrollUpButton} from 'react-scroll-up-button';
 import { Row, Col, Card, CardImg, CardText, CardBody, CardTitle, Button, Jumbotron, UncontrolledAlert  } from 'reactstrap';
 import Tab2 from './tab2.js';
 import Tab3 from './tab3.js';
@@ -13,6 +14,7 @@ import Tab5 from './tab5.js';
 import * as firebase from 'firebase';
 import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
 import '../../../node_modules/react-tabs/style/react-tabs.css';
+import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css';
 import './landing.css';
 import './style.css';
 
@@ -267,10 +269,13 @@ export default class LandingPage extends React.Component{
               </Card>
             </Col>
       </Row>
+      <Tab4 />
       <Row>
-         <Tab4 />
+         
          <Tab5 />
-      </Row>  
+      </Row>
+      <ScrollUpButton />
+                    
             
   </div>
       );
